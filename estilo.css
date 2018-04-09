@@ -9,38 +9,49 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight:300;
 }
-
-h1, h2, h3, h4{
-	font-family: 'Montserrat', sans-serif; 
-	font-weight:700; 
+h4{
+    font-family: 'pacifico'; 
+	font-weight:900;
+    font-size: 200%;
+    margin-top: -5%;
+    color:currentColor
 }
-
-h1{
-	letter-spacing:0.1em;
-	color:rgba(255,255,255,0.9);
-	text-shadow: 1px 1px 0 #999;	
-	text-align:center;
+h3{
+	font-family: 'fjalla one'; 
+	font-weight:900;
+    font-size: 200%;
+    margin-top: 1%
 }
-
 h2{
-	letter-spacing:0.02em; 
-	color:rgba(255,255,255,0.6); 
-	padding:0.2em 0; 
-	text-shadow: 1px 1px 0 #999;
-	text-align:center;		
+    font-family:'Lato', black;
+    color:aliceblue;
+    font-size: 300%;
+    margin-top: -2%;
+    padding: 2% 40% -2% 4%;
+}
+h1{
+	min-height:500px;
+    background-image: url(media/Mesa%20de%20trabajo%201.png);
+	background-position: center;
+	background-repeat:no-repeat;
+    background-size: auto 100%;
+    margin-top: -10%
 }
 
 h3{
-	letter-spacing:0.2em; 
+	letter-spacing:0.4em; 
 	color:rgba(0,0,0,.75); 
 	padding:2em 0 0.6em 0; 
 	text-shadow: 1px 1px 0 #ccc;
 	text-align:center;	
 }
 
-h4, h5, h6{
-	font-weight:left;
-	font-weight:600; 	
+h5, h6{
+	font-family: 'source code pro', light;
+    font-weight:left;
+	font-weight:350; 
+    font-size: 90%;
+    color: aliceblue;
 }
 
 #contenido{width:98%; margin:1% auto;}
@@ -50,26 +61,27 @@ header{
 	top:40%;
 	position: absolute;
 	text-align:center;
-	z-index:9;
-	color:white;
+	z-index:3;
+	color:darkgrey;
 }
 
 @media screen and (max-width: 980px){
 	header{top:20%;}
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width:60px){
 	header{top:10%;}
 }
 
 video{
 	width:100%;
-	height:auto;
+	height: auto 10%;
 	}
 
 #somos{
-	width:100%;
-	background:rgb(250,250,250);
+	width:200%;
+	width:200%;
+	background:white;
 	margin-bottom:2%;
 	}
 
@@ -81,51 +93,40 @@ video{
 	}
 
 .dupla a{
-	color:rgba(255,0,0,0.75);
+	color:rgb(77,77,77);
 	text-decoration:none;
-	font-weight:700;
+	font-weight:500;
+    font-family: 'source code pro', light;
+    font-size: 110%;
+    
 }
 
 .dupla a:hover{
-	color:rgba(255,0,0,1);
+	color:aliceblue;
 	text-decoration:underline;
 }
 
 .primera{
 	min-height:300px;
 	text-align:left;
-	background-color:rgba(241,230,210,1);
-	background-image:url('media/dupla-01.jpg');
-	background-position:top right;
+	background-color:rgba(116,116,108,1);
+	background-image:url('media/dupla-01.png');
+	background-position:center right;
 	background-repeat:no-repeat;
-	background-size:auto 100%;
+	background-size:auto 200%;
 }
 .primera h4{padding: 2% 40% 1% 2%;}
 
-.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+.primera h5{padding: 1% 40% 2% 2%; margin-bottom:1em; letter-spacing:0.1em;}
 
-.primera p{padding: 2% 40% 2% 2%;}
-
-.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
-
-.segunda{
-	min-height:300px;
-	text-align:right;
-	background-color:rgba(231,240,239,1);
-	background-image:url('media/dupla-02.jpg');
-	background-position:top left;
-	background-repeat:no-repeat;
-	background-size:auto 100%;
+.primera p{
+    font-family: 'lato', light;
+    color:aliceblue;
+    padding: 2% 70% 2% 2%;
+    letter-spacing: 0.2em;
 }
 
-.segunda h4{padding: 2% 2% 1% 40%;}
-
-.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;}
-
-.segunda p{padding: 2% 2% 2% 40%;}
-
-.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
-
+.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
 #somos hr{
 	clear:both;
 	border:none;
@@ -134,7 +135,7 @@ video{
 #portafolio{
 	width:100%;
 	padding-bottom:1%;
-	background:linear-gradient(to bottom right, #F2E6D4, #E7F0EF);
+	background:white;
 }
 
 .item {
@@ -173,22 +174,24 @@ video{
 }
 
 .item p{
-	font-size:0.875em;
-	letter-spacing:0.05em;
+    font-family: 'lato', light;
+    font-size:0.875em;
+	letter-spacing:0.08em;
 	margin:2% 5% 6% 5%;
+    margin-top: auto 140%
 }
 
 footer{
 	width:100%;
-	padding:3em 0 1em 0;
+	padding:10em 0 1em 0;
 	text-align:center;
-	font-family: 'Montserrat', sans-serif; 
-	font-weight:700; 	
+	font-family:'Fjalla One'; 
+	font-weight:700; 
+    letter-spacing:0.6em;
 }
 
 footer p{
 	text-transform:uppercase;
-	letter-spacing:0.1em;
 	font-size:0.9em;
 	}
 
@@ -200,6 +203,11 @@ footer hr{
 
 @media screen and (orientation: portrait){
 
+    h1{
+        width:96%;
+		padding:2%;
+		float:center;
+    } 
 	.dupla{
 		width:96%;
 		padding:2%;
@@ -208,7 +216,7 @@ footer hr{
 	.item{
 		width:48%;
 		margin:1%;
-		background:#F0E5D3;
+		background:white;
 		color:#333;
 	}
 
